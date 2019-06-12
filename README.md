@@ -10,4 +10,6 @@ Programming mode allows users to program a path that iRoboCar will follow. Seque
 
 Education mode is a simple tap-to-learn page where young children and teens can learn about what makes iRoboCar function.
 
+Since the app was designed to work in combination with the physical iRoboCar itself, the app's joysticks will crash since there is no Bluetooth connection if iRoboCar is not nearby. 
+
 

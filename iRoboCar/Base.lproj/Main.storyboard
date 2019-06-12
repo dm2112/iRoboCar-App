@@ -1,24 +1,704 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udl-xc-cbv">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BalooThambi-Regular.ttf">
+            <string>BalooThambi-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUr-nN-Wq9">
+                                <rect key="frame" x="33" y="82" width="210" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="24"/>
+                                <state key="normal" title="Adventure Mode" backgroundImage="circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PVy-dD-PDh" kind="show" id="4W9-39-MTc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-i0-3jS">
+                                <rect key="frame" x="58" y="317" width="165" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="17"/>
+                                <state key="normal" title="Programming Mode" backgroundImage="circle">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nqm-D1-z4h" kind="show" id="wgi-z7-YlA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7f-Iy-5eg">
+                                <rect key="frame" x="237" y="228" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="16"/>
+                                <state key="normal" title="Discover Mode" backgroundImage="circle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pA9-UB-7M7" kind="show" id="Mk7-eA-LXp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iRoboCar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-4u-r1i">
+                                <rect key="frame" x="118" y="23" width="138" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="10" height="-1"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-Ux-B5p">
+                                <rect key="frame" x="124" y="559" width="126" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="17"/>
+                                <state key="normal" title="WiFi Credentials">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qp-4x-QX0">
+                                <rect key="frame" x="118" y="515" width="138" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="15"/>
+                                <state key="normal" title="Toggle LED!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleLED:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXf-11-RwO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creative" translatesAutoresizingMaskIntoConstraints="NO" id="ONh-xm-Zs0">
+                                <rect key="frame" x="277" y="239" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-VN-58N">
+                                <rect key="frame" x="118" y="341" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-camera" translatesAutoresizingMaskIntoConstraints="NO" id="a1y-8f-40I">
+                                <rect key="frame" x="118" y="115" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-f3-GlS">
+                                <rect key="frame" x="217" y="445" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="16"/>
+                                <state key="normal" title="Education Mode" backgroundImage="circle">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xjZ-ct-3pU" kind="show" id="lVA-Cf-miX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="study" translatesAutoresizingMaskIntoConstraints="NO" id="KBF-oE-QI5">
+                                <rect key="frame" x="262" y="459" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4945547173" green="0.45419324929999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IcP-0L-k1v"/>
+                    <connections>
+                        <outlet property="adventureBtn" destination="dUr-nN-Wq9" id="foF-ws-qrH"/>
+                        <outlet property="discoverBtn" destination="M7f-Iy-5eg" id="R3D-tu-u4f"/>
+                        <outlet property="educationBtn" destination="fZb-f3-GlS" id="e5z-6H-88K"/>
+                        <outlet property="programBtn" destination="CmZ-i0-3jS" id="w6q-kl-FN8"/>
+                        <outlet property="toggleLEDBtn" destination="3Qp-4x-QX0" id="0zh-19-gFU"/>
+                        <segue destination="qEh-tg-bgV" kind="show" identifier="weewoo" id="sLH-kV-pkl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-21.600000000000001" y="91.304347826086968"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="Jl4-w2-Uew">
+            <objects>
+                <viewController id="PVy-dD-PDh" customClass="SignInViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wO8-A2-3gf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-3R-Z68">
+                                <rect key="frame" x="87" y="170" width="201" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.88556338028169013" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WiFi Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BYd-W2-Glq">
+                                <rect key="frame" x="87" y="238" width="201" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Yp-wT-43o">
+                                <rect key="frame" x="87" y="279" width="201" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.89000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WiFi Network Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oA6-ks-NLc">
+                                <rect key="frame" x="87" y="129" width="201" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="up6-7s-kaK">
+                                <rect key="frame" x="162" y="437" width="50" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="networkGo:" destination="PVy-dD-PDh" eventType="touchUpInside" id="WpH-NA-H8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWY-O4-R1f">
+                                <rect key="frame" x="267.5" y="263" width="132" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Ips-MH-S8B"/>
+                                    <constraint firstAttribute="height" constant="30" id="gL8-uN-ak9"/>
+                                </constraints>
+                                <state key="normal" title="Straight To Camera"/>
+                                <connections>
+                                    <segue destination="qEh-tg-bgV" kind="show" identifier="" id="MdU-lO-paF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sqp-IM-80e" firstAttribute="bottom" secondItem="HWY-O4-R1f" secondAttribute="bottom" constant="82" id="7eB-Xy-Bns"/>
+                            <constraint firstItem="HWY-O4-R1f" firstAttribute="centerX" secondItem="sqp-IM-80e" secondAttribute="centerX" id="RBk-Bh-VPw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sqp-IM-80e"/>
+                    </view>
+                    <connections>
+                        <outlet property="networkName" destination="FJC-3R-Z68" id="G68-Qh-2bG"/>
+                        <outlet property="networkPass" destination="2Yp-wT-43o" id="iYA-oc-Bz9"/>
+                        <segue destination="qEh-tg-bgV" kind="show" identifier="wificonnected" id="28m-LG-0gv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2h-UK-b7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="1097"/>
+        </scene>
+        <!--Programming-->
+        <scene sceneID="eup-5n-feu">
+            <objects>
+                <viewController id="Nqm-D1-z4h" customClass="ProgrammingViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zck-hn-qGd">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-zo-HxK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4945547173" green="0.6614720785" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mycell" rowHeight="80" id="MZx-VX-XN7" customClass="DragTableViewCell" customModule="iRoboCar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MZx-VX-XN7" id="ZGI-tz-F6k">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Speed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qtW-LX-L26">
+                                                    <rect key="frame" x="15" y="25" width="80" height="30"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="4aN-GR-cV1"/>
+                                                        <constraint firstAttribute="height" constant="30" id="fUo-Zc-y5u"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55b-IK-5EF">
+                                                    <rect key="frame" x="328" y="24" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="BAB-4X-sGa"/>
+                                                        <constraint firstAttribute="width" constant="32" id="QOZ-Mt-sw8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="speed level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay5-rG-eH2">
+                                                    <rect key="frame" x="18" y="52" width="77.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiz-6D-gQc">
+                                                    <rect key="frame" x="161.5" y="52" width="57" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Duration" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFN-mb-ERA">
+                                                    <rect key="frame" x="133" y="25" width="108" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="NyJ-V0-Dib"/>
+                                                        <constraint firstAttribute="width" constant="108" id="anl-qU-fQU"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.037429042760000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="WFN-mb-ERA" firstAttribute="leading" secondItem="qtW-LX-L26" secondAttribute="trailing" constant="38" id="0BK-k3-PJ2"/>
+                                                <constraint firstItem="Ay5-rG-eH2" firstAttribute="leading" secondItem="ZGI-tz-F6k" secondAttribute="leading" constant="18" id="2Ib-9i-Wvp"/>
+                                                <constraint firstItem="Ay5-rG-eH2" firstAttribute="top" secondItem="qtW-LX-L26" secondAttribute="bottom" constant="-3" id="8gN-Kj-N6j"/>
+                                                <constraint firstItem="qtW-LX-L26" firstAttribute="leading" secondItem="ZGI-tz-F6k" secondAttribute="leading" constant="15" id="MiD-II-buq"/>
+                                                <constraint firstItem="jiz-6D-gQc" firstAttribute="leading" secondItem="Ay5-rG-eH2" secondAttribute="trailing" constant="66" id="RfE-2L-pdB"/>
+                                                <constraint firstItem="55b-IK-5EF" firstAttribute="centerY" secondItem="ZGI-tz-F6k" secondAttribute="centerY" id="YLi-WK-gJO"/>
+                                                <constraint firstAttribute="trailing" secondItem="55b-IK-5EF" secondAttribute="trailing" constant="15" id="aUG-Kd-TQY"/>
+                                                <constraint firstItem="qtW-LX-L26" firstAttribute="centerY" secondItem="ZGI-tz-F6k" secondAttribute="centerY" id="iz9-HG-b06"/>
+                                                <constraint firstItem="jiz-6D-gQc" firstAttribute="top" secondItem="WFN-mb-ERA" secondAttribute="bottom" constant="-3" id="uOg-LP-x5e"/>
+                                                <constraint firstItem="WFN-mb-ERA" firstAttribute="centerY" secondItem="ZGI-tz-F6k" secondAttribute="centerY" id="ws2-E2-Qdn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="directionImageView" destination="55b-IK-5EF" id="Q6g-hA-9tm"/>
+                                            <outlet property="durationField" destination="WFN-mb-ERA" id="54h-TD-Cns"/>
+                                            <outlet property="speedField" destination="qtW-LX-L26" id="TC4-Lw-Vwr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nqm-D1-z4h" id="LmA-nl-bYq"/>
+                                    <outlet property="delegate" destination="Nqm-D1-z4h" id="ww4-mi-Y79"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="Pc1-1I-gIj">
+                                <rect key="frame" x="97" y="477" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" red="0.58508299350000004" green="0.98514410620000004" blue="0.5784755721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35J-CU-Yx0">
+                                <rect key="frame" x="163" y="599" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back" image="down-arrow"/>
+                                <connections>
+                                    <action selector="backward:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="Ytc-Xt-AcK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS6-fr-hpY">
+                                <rect key="frame" x="107" y="543" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="left" image="left-arrow"/>
+                                <connections>
+                                    <action selector="left:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="sZw-6x-7v6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-2E-CdU">
+                                <rect key="frame" x="219" y="251" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Yu1-aR-RFb"/>
+                                    <constraint firstAttribute="height" constant="48" id="j9m-LG-hoV"/>
+                                </constraints>
+                                <state key="normal" title="right" image="right-arrow"/>
+                                <connections>
+                                    <action selector="right:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="AmK-Qf-5lc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etx-be-7VS">
+                                <rect key="frame" x="163" y="487" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="forward" image="up-arrow"/>
+                                <connections>
+                                    <action selector="forward:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="Cff-8O-Jum"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeY-4s-7ME">
+                                <rect key="frame" x="35" y="253" width="323" height="43"/>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="20"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBtn:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="Fkf-xu-B9f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBf-PZ-hnz">
+                                <rect key="frame" x="300" y="252" width="341" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="SdJ-wK-8lA"/>
+                                    <constraint firstAttribute="width" constant="49" id="WII-Fp-WwX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="20"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="Nqm-D1-z4h" eventType="touchUpInside" id="AGT-dV-G7b"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l7f-Pu-1Z2">
+                                <rect key="frame" x="287" y="620" width="74" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <color key="tintColor" red="0.76297089119999995" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4945547173" green="0.6614720785" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eyd-rf-XEu" firstAttribute="bottom" secondItem="jBf-PZ-hnz" secondAttribute="bottom" constant="82" id="4JN-d3-x4D"/>
+                            <constraint firstItem="eyd-rf-XEu" firstAttribute="bottom" secondItem="S5c-2E-CdU" secondAttribute="bottom" constant="76" id="I9q-8z-bMS"/>
+                            <constraint firstItem="eyd-rf-XEu" firstAttribute="bottom" secondItem="PeY-4s-7ME" secondAttribute="bottom" constant="79" id="IKK-ao-JfX"/>
+                            <constraint firstItem="jBf-PZ-hnz" firstAttribute="leading" secondItem="S5c-2E-CdU" secondAttribute="trailing" constant="33" id="QXd-hg-8O8"/>
+                            <constraint firstItem="eyd-rf-XEu" firstAttribute="trailing" secondItem="PeY-4s-7ME" secondAttribute="trailing" constant="309" id="YRR-bv-d2y"/>
+                            <constraint firstItem="jBf-PZ-hnz" firstAttribute="leading" secondItem="eyd-rf-XEu" secondAttribute="leading" constant="300" id="Z5N-or-NjG"/>
+                            <constraint firstItem="eyd-rf-XEu" firstAttribute="trailing" secondItem="jBf-PZ-hnz" secondAttribute="trailing" constant="26" id="bul-Z5-Sih"/>
+                            <constraint firstItem="PeY-4s-7ME" firstAttribute="leading" secondItem="eyd-rf-XEu" secondAttribute="leading" constant="35" id="pSz-hO-lik"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eyd-rf-XEu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Programming" id="UIa-vz-Kpe"/>
+                    <connections>
+                        <outlet property="dragTableView" destination="1Xk-zo-HxK" id="zFv-ce-cdY"/>
+                        <outlet property="ultraColor" destination="l7f-Pu-1Z2" id="Aqq-h3-13k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxY-xl-pp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1239.2" y="1095.2023988005999"/>
+        </scene>
+        <!--Adventure-->
+        <scene sceneID="rbx-HK-9Jc">
+            <objects>
+                <viewController id="qEh-tg-bgV" customClass="GameViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="7Nn-ny-1t5">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="yRB-nc-Jjm">
+                                <rect key="frame" x="0.0" y="32" width="667" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shI-bJ-yPO" customClass="SKView">
+                                <rect key="frame" x="0.0" y="60" width="667" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="125" translatesAutoresizingMaskIntoConstraints="NO" id="umE-UM-Xd7">
+                                        <rect key="frame" x="274" y="277" width="118" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4945547173" green="0.6614720785" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="192-tY-Yrg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adventure" id="CQQ-Rs-pBd"/>
+                    <connections>
+                        <outlet property="bground" destination="yRB-nc-Jjm" id="CS7-CN-Kl2"/>
+                        <outlet property="joystickView" destination="shI-bJ-yPO" id="Y7J-Qw-hNl"/>
+                        <outlet property="slider" destination="umE-UM-Xd7" id="Mby-Fh-rfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEH-3f-iyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="2070"/>
+        </scene>
+        <!--Education-->
+        <scene sceneID="QJM-ob-K9C">
+            <objects>
+                <viewController id="xjZ-ct-3pU" customClass="EducationViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kw4-Gi-ATi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-fC-rbz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VA3-ec-MrY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1800"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on the stars to see how iRoboCar works!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5R-g6-p6F">
+                                                <rect key="frame" x="16" y="8" width="343" height="79"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="BalooThambi-Regular" family="Baloo Thambi" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="rVY-aS-P4L">
+                                                <rect key="frame" x="156" y="95" width="70" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tap" translatesAutoresizingMaskIntoConstraints="NO" id="CQD-V7-7SO">
+                                                <rect key="frame" x="183" y="115" width="70" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="side" translatesAutoresizingMaskIntoConstraints="NO" id="hnF-i9-VLc">
+                                                <rect key="frame" x="16" y="207" width="343" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgp-2o-KRP">
+                                                <rect key="frame" x="230" y="320" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="gearButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="Bdi-HB-hhl"/>
+                                                </connections>
+                                            </button>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSf-es-I04">
+                                                <rect key="frame" x="127" y="363" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2196078431372549" green="0.29411764705882354" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">iRoboCar drives by using a brushed DC motor. A DC motor works by converting electrical energy into mechanical energy. The motor is important in moving the car forward and backwards. </string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="servoside" translatesAutoresizingMaskIntoConstraints="NO" id="Zup-ko-UV7">
+                                                <rect key="frame" x="16" y="499" width="343" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZS9-bR-ufx">
+                                                <rect key="frame" x="191" y="616" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="servoButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="v0n-NZ-I9A"/>
+                                                </connections>
+                                            </button>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfW-vs-VGl">
+                                                <rect key="frame" x="8" y="651" width="240" height="133"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2196078431372549" green="0.29411764705882354" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">To steer, iRoboCar uses a servo motor. This motor moves an arm that pushes the wheels left or right based on what we tell iRoboCar to do. Servo motors are able to move in precise ways, allowing for iRoboCar's great steering.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pcb" translatesAutoresizingMaskIntoConstraints="NO" id="E4l-2K-Em1">
+                                                <rect key="frame" x="16" y="792" width="343" height="357"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRA-Ni-v85">
+                                                <rect key="frame" x="207" y="984" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="cameraWroomButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="gBl-fc-n1f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4j-jH-OmW">
+                                                <rect key="frame" x="127" y="1075" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="blueWroomButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="mhb-u7-eIP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olh-2M-gdt">
+                                                <rect key="frame" x="201" y="811" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="cameraButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="RtV-Yd-OeN"/>
+                                                </connections>
+                                            </button>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nil-dy-o67">
+                                                <rect key="frame" x="230" y="718" width="145" height="150"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2196078431372549" green="0.29411764705882354" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">iRoboCar has a camera that is operational in Adventure Mode! The camera uses SPI and I2C, (Ask your fellow engineer how it works!)</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This is the brain behind the camera, it gives commands and controls so that we can see what iRoboCar sees!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-YI-peo">
+                                                <rect key="frame" x="220" y="1001" width="147" height="137"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.21960784310000001" green="0.29411764709999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ultra" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-eV-57W">
+                                                <rect key="frame" x="16" y="1199" width="343" height="222"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ozX-2Q-dx0">
+                                                <rect key="frame" x="13" y="1146" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.21960784310000001" green="0.29411764709999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">This is the brain behind how the car moves and connects with the iPhone. It recieves and gives commands so that the phone and iRoboCar are in sync. Ask about what a microcontroller is!</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Pv-5y-hoR">
+                                                <rect key="frame" x="104" y="1282" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.21960784310000001" green="0.29411764709999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">These are the eyes of iRoboCar. Better known as the ultrasonic sensor. Stepping in front of iRoboCar stops the car, because it sees that there is an object in the way! </string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ino-GW-IFv">
+                                                <rect key="frame" x="183" y="1239" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" image="star"/>
+                                                <connections>
+                                                    <action selector="ultraButton:" destination="xjZ-ct-3pU" eventType="touchUpInside" id="oV9-rU-iPd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.49411764705882355" green="0.66274509803921566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="5bR-kR-ZKW"/>
+                                            <constraint firstAttribute="height" constant="1800" id="M62-Nz-38a"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="VA3-ec-MrY" firstAttribute="leading" secondItem="CPe-fC-rbz" secondAttribute="leading" id="Dvv-nC-xKB"/>
+                                    <constraint firstItem="VA3-ec-MrY" firstAttribute="top" secondItem="CPe-fC-rbz" secondAttribute="top" id="M4H-HG-n1h"/>
+                                    <constraint firstAttribute="bottom" secondItem="VA3-ec-MrY" secondAttribute="bottom" id="c7l-ju-jgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="VA3-ec-MrY" secondAttribute="trailing" id="lyd-gW-Qhf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49411764705882355" green="0.66274509803921566" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CHy-Ra-5ad" firstAttribute="trailing" secondItem="CPe-fC-rbz" secondAttribute="trailing" id="Ihe-ad-CrE"/>
+                            <constraint firstItem="CPe-fC-rbz" firstAttribute="leading" secondItem="CHy-Ra-5ad" secondAttribute="leading" id="Rix-6o-ccS"/>
+                            <constraint firstItem="CPe-fC-rbz" firstAttribute="bottom" secondItem="CHy-Ra-5ad" secondAttribute="bottom" id="V2T-6X-kYE"/>
+                            <constraint firstItem="VA3-ec-MrY" firstAttribute="width" secondItem="kw4-Gi-ATi" secondAttribute="width" id="rYi-Zf-MSH"/>
+                            <constraint firstItem="CHy-Ra-5ad" firstAttribute="top" secondItem="CPe-fC-rbz" secondAttribute="top" id="txF-eT-dV3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CHy-Ra-5ad"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Education" id="VlI-5J-tj6"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1800"/>
+                    <connections>
+                        <outlet property="blueWroomText" destination="ozX-2Q-dx0" id="YBf-PU-kaw"/>
+                        <outlet property="cameraText" destination="nil-dy-o67" id="GvL-Yc-twS"/>
+                        <outlet property="cameraWroomText" destination="QJ3-YI-peo" id="a5z-KQ-27U"/>
+                        <outlet property="gearText" destination="bSf-es-I04" id="r8W-La-ODa"/>
+                        <outlet property="servoText" destination="BfW-vs-VGl" id="g3J-YY-Mce"/>
+                        <outlet property="ultraText" destination="9Pv-5y-hoR" id="Snf-L0-964"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Elr-Bz-YYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544.3778110944531" y="1094.4000000000001"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Qe-az-Xn9">
+            <objects>
+                <navigationController id="udl-xc-cbv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vcv-R3-T36">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="57s-Ie-KLy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iu-Gw-ZSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-999" y="91"/>
+        </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="cgN-kA-HAX">
+            <objects>
+                <viewController id="pA9-UB-7M7" customClass="DiscoverViewController" customModule="iRoboCar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="PPr-GG-ofX">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeD-hR-S9h" customClass="SKView">
+                                <rect key="frame" x="0.0" y="60" width="667" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="125" translatesAutoresizingMaskIntoConstraints="NO" id="Gqd-sN-2GE">
+                                        <rect key="frame" x="274" y="259" width="118" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-02-06 at 10.36.07 AM" translatesAutoresizingMaskIntoConstraints="NO" id="xif-QY-kPV">
+                                        <rect key="frame" x="192" y="47" width="282" height="151"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4945547173" green="0.6614720785" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="1Wd-Xf-lMP"/>
+                    </view>
+                    <connections>
+                        <outlet property="joystickView" destination="ZeD-hR-S9h" id="xej-1w-5Nk"/>
+                        <outlet property="slider" destination="Gqd-sN-2GE" id="OAc-m3-25U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECY-AM-hIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352.473763118441" y="1095.2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2019-02-06 at 10.36.07 AM" width="432" height="226"/>
+        <image name="circle" width="1200" height="1200"/>
+        <image name="code" width="480" height="480"/>
+        <image name="creative" width="128" height="128"/>
+        <image name="dog" width="1910" height="1000"/>
+        <image name="down-arrow" width="64" height="64"/>
+        <image name="left-arrow" width="64" height="64"/>
+        <image name="pcb" width="2858" height="3816"/>
+        <image name="photo-camera" width="512" height="512"/>
+        <image name="right-arrow" width="60" height="60"/>
+        <image name="servoside" width="2155" height="1317"/>
+        <image name="side" width="2142" height="1448"/>
+        <image name="star" width="512" height="512"/>
+        <image name="study" width="512" height="512"/>
+        <image name="tap" width="512" height="512"/>
+        <image name="ultra" width="2128" height="1484"/>
+        <image name="up-arrow" width="60" height="60"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sLH-kV-pkl"/>
+    </inferredMetricsTieBreakers>
 </document>

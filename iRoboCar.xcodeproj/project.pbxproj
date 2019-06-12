@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE043731EEFAC86851D733FB /* Pods_iRoboCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517C277891291567315FED16 /* Pods_iRoboCar.framework */; };
+		F60FA55F2215D32300A5B45D /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FA55E2215D32300A5B45D /* EducationViewController.swift */; };
+		F60FA5612215DA8100A5B45D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60FA5602215DA8100A5B45D /* DiscoverViewController.swift */; };
 		F642B3CC2191FC59003ABB2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F642B3CB2191FC59003ABB2B /* AppDelegate.swift */; };
 		F642B3CE2191FC59003ABB2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F642B3CD2191FC59003ABB2B /* ViewController.swift */; };
 		F642B3D12191FC59003ABB2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F642B3CF2191FC59003ABB2B /* Main.storyboard */; };
 		F642B3D32191FC5A003ABB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F642B3D22191FC5A003ABB2B /* Assets.xcassets */; };
 		F642B3D62191FC5A003ABB2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F642B3D42191FC5A003ABB2B /* LaunchScreen.storyboard */; };
+		F6817A6321ADBA5E006B7C3D /* AnalogStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6817A6221ADBA5E006B7C3D /* AnalogStick.swift */; };
+		F6817A6521ADC0E5006B7C3D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6817A6421ADC0E5006B7C3D /* GameViewController.swift */; };
+		F6817A6721ADC10C006B7C3D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6817A6621ADC10C006B7C3D /* GameScene.swift */; };
+		F68E5C9621ED848600DCF97D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5C9521ED848600DCF97D /* SignInViewController.swift */; };
+		F68E5C9821F0FDA100DCF97D /* ProgrammingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5C9721F0FDA100DCF97D /* ProgrammingViewController.swift */; };
+		F68E5C9A21F1101D00DCF97D /* DragTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5C9921F1101D00DCF97D /* DragTableViewCell.swift */; };
+		F68E5C9C21F1109900DCF97D /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E5C9B21F1109900DCF97D /* Instruction.swift */; };
+		F69D6F0721FA35980015190B /* BalooThambi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F69D6F0621FA35980015190B /* BalooThambi-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		517C277891291567315FED16 /* Pods_iRoboCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iRoboCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603E0B4CE07A9A2B92A612AD /* Pods-iRoboCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRoboCar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iRoboCar/Pods-iRoboCar.debug.xcconfig"; sourceTree = "<group>"; };
+		921AF497B472F3B8B88A0680 /* Pods-iRoboCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRoboCar.release.xcconfig"; path = "Pods/Target Support Files/Pods-iRoboCar/Pods-iRoboCar.release.xcconfig"; sourceTree = "<group>"; };
+		F60FA55E2215D32300A5B45D /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		F60FA5602215DA8100A5B45D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		F642B3C82191FC59003ABB2B /* iRoboCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRoboCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F642B3CB2191FC59003ABB2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F642B3CD2191FC59003ABB2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,14 @@
 		F642B3D22191FC5A003ABB2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F642B3D52191FC5A003ABB2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F642B3D72191FC5A003ABB2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6817A6221ADBA5E006B7C3D /* AnalogStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStick.swift; sourceTree = "<group>"; };
+		F6817A6421ADC0E5006B7C3D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F6817A6621ADC10C006B7C3D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F68E5C9521ED848600DCF97D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F68E5C9721F0FDA100DCF97D /* ProgrammingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingViewController.swift; sourceTree = "<group>"; };
+		F68E5C9921F1101D00DCF97D /* DragTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragTableViewCell.swift; sourceTree = "<group>"; };
+		F68E5C9B21F1109900DCF97D /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
+		F69D6F0621FA35980015190B /* BalooThambi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooThambi-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE043731EEFAC86851D733FB /* Pods_iRoboCar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45D064174A5D56F2C36E0D2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				517C277891291567315FED16 /* Pods_iRoboCar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		988400850F35E41D18A229F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				603E0B4CE07A9A2B92A612AD /* Pods-iRoboCar.debug.xcconfig */,
+				921AF497B472F3B8B88A0680 /* Pods-iRoboCar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F642B3BF2191FC59003ABB2B = {
 			isa = PBXGroup;
 			children = (
 				F642B3CA2191FC59003ABB2B /* iRoboCar */,
 				F642B3C92191FC59003ABB2B /* Products */,
+				988400850F35E41D18A229F0 /* Pods */,
+				45D064174A5D56F2C36E0D2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +98,40 @@
 		F642B3CA2191FC59003ABB2B /* iRoboCar */ = {
 			isa = PBXGroup;
 			children = (
-				F642B3CB2191FC59003ABB2B /* AppDelegate.swift */,
-				F642B3CD2191FC59003ABB2B /* ViewController.swift */,
+				F6788F012230D77900B98FA2 /* Main Menu */,
+				F6788F002230D76200B98FA2 /* Programming */,
+				F60FA5602215DA8100A5B45D /* DiscoverViewController.swift */,
+				F68E5C9521ED848600DCF97D /* SignInViewController.swift */,
+				F6817A6421ADC0E5006B7C3D /* GameViewController.swift */,
+				F6817A6621ADC10C006B7C3D /* GameScene.swift */,
 				F642B3CF2191FC59003ABB2B /* Main.storyboard */,
+				F60FA55E2215D32300A5B45D /* EducationViewController.swift */,
+				F6817A6221ADBA5E006B7C3D /* AnalogStick.swift */,
 				F642B3D22191FC5A003ABB2B /* Assets.xcassets */,
 				F642B3D42191FC5A003ABB2B /* LaunchScreen.storyboard */,
+				F642B3CB2191FC59003ABB2B /* AppDelegate.swift */,
+				F69D6F0621FA35980015190B /* BalooThambi-Regular.ttf */,
 				F642B3D72191FC5A003ABB2B /* Info.plist */,
 			);
 			path = iRoboCar;
+			sourceTree = "<group>";
+		};
+		F6788F002230D76200B98FA2 /* Programming */ = {
+			isa = PBXGroup;
+			children = (
+				F68E5C9B21F1109900DCF97D /* Instruction.swift */,
+				F68E5C9921F1101D00DCF97D /* DragTableViewCell.swift */,
+				F68E5C9721F0FDA100DCF97D /* ProgrammingViewController.swift */,
+			);
+			path = Programming;
+			sourceTree = "<group>";
+		};
+		F6788F012230D77900B98FA2 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F642B3CD2191FC59003ABB2B /* ViewController.swift */,
+			);
+			path = "Main Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F642B3DA2191FC5A003ABB2B /* Build configuration list for PBXNativeTarget "iRoboCar" */;
 			buildPhases = (
+				1E1A7519F23A680C2FFD9D36 /* [CP] Check Pods Manifest.lock */,
 				F642B3C42191FC59003ABB2B /* Sources */,
 				F642B3C52191FC59003ABB2B /* Frameworks */,
 				F642B3C62191FC59003ABB2B /* Resources */,
+				ACEC30DEE95010EEBF7A2164 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F642B3D62191FC5A003ABB2B /* LaunchScreen.storyboard in Resources */,
+				F69D6F0721FA35980015190B /* BalooThambi-Regular.ttf in Resources */,
 				F642B3D32191FC5A003ABB2B /* Assets.xcassets in Resources */,
 				F642B3D12191FC59003ABB2B /* Main.storyboard in Resources */,
 			);
@@ -130,12 +203,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E1A7519F23A680C2FFD9D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iRoboCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACEC30DEE95010EEBF7A2164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iRoboCar/Pods-iRoboCar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftReorder/SwiftReorder.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftReorder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iRoboCar/Pods-iRoboCar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F642B3C42191FC59003ABB2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68E5C9621ED848600DCF97D /* SignInViewController.swift in Sources */,
+				F68E5C9A21F1101D00DCF97D /* DragTableViewCell.swift in Sources */,
+				F6817A6721ADC10C006B7C3D /* GameScene.swift in Sources */,
+				F6817A6521ADC0E5006B7C3D /* GameViewController.swift in Sources */,
+				F6817A6321ADBA5E006B7C3D /* AnalogStick.swift in Sources */,
+				F68E5C9821F0FDA100DCF97D /* ProgrammingViewController.swift in Sources */,
 				F642B3CE2191FC59003ABB2B /* ViewController.swift in Sources */,
+				F60FA55F2215D32300A5B45D /* EducationViewController.swift in Sources */,
+				F60FA5612215DA8100A5B45D /* DiscoverViewController.swift in Sources */,
+				F68E5C9C21F1109900DCF97D /* Instruction.swift in Sources */,
 				F642B3CC2191FC59003ABB2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +347,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -274,16 +402,18 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
 		F642B3DB2191FC5A003ABB2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603E0B4CE07A9A2B92A612AD /* Pods-iRoboCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8998VQDE8;
+				DEVELOPMENT_TEAM = MK2H94TST4;
 				INFOPLIST_FILE = iRoboCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheFabFive.iRoboCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,10 +429,12 @@
 		};
 		F642B3DC2191FC5A003ABB2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921AF497B472F3B8B88A0680 /* Pods-iRoboCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L8998VQDE8;
+				DEVELOPMENT_TEAM = MK2H94TST4;
 				INFOPLIST_FILE = iRoboCar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +442,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheFabFive.iRoboCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

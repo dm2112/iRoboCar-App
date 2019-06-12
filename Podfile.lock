@@ -1,0 +1,30 @@
+PODS:
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - CocoaAsyncSocket (7.6.3)
+  - SwiftReorder (6.0.0)
+  - SwiftSocket (2.0.2)
+
+DEPENDENCIES:
+  - Charts
+  - CocoaAsyncSocket
+  - SwiftReorder (~> 6.0)
+  - SwiftSocket
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Charts
+    - CocoaAsyncSocket
+    - SwiftReorder
+    - SwiftSocket
+
+SPEC CHECKSUMS:
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  SwiftReorder: 0eefefe5e469c70a98d129e9aa2952862a2b34d2
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+
+PODFILE CHECKSUM: 191e17e3d1e902e49716be45adffd19ecdbd45ad
+
+COCOAPODS: 1.5.3
